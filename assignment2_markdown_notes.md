@@ -43,7 +43,7 @@ Where:
 | `S` | Load effect or demand on the structure |
 | `g(X)` | Limit-state function |
 
-Interpretation:
+Condition:
 
 - when `g(X) > 0`, the system is **safe**
 - when `g(X) = 0`, the system is at the **limit state**
