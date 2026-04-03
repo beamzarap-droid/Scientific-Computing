@@ -149,4 +149,4 @@ This code shows the method of estimating failure probability using random sampli
 
 ## Summary
 
-These notes show that **Monte Carlo Simulation** is a method for estimating structural failure probability under uncertainty. By doing this step by step, defining random variables, generating many samples, and checking the limit-state function, engineers can evaluate failure probability using MCs whether a system is safe or not. This makes MCS a useful tool in *scientific and technical note-taking* for reliability and risk assessment in engineering topics.
+These notes conclude that **Monte Carlo Simulation** is a method for estimating structural failure probability under uncertainty. By doing this step by step, defining random variables, generating many samples, and checking the limit-state function. Engineers can evaluate failure probability using MCs whether a system is safe or not. This makes MCS a tool in *scientific and technical note-taking* for reliability and risk assessment in engineering topics.
