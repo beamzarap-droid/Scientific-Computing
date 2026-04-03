@@ -18,8 +18,6 @@ The notes cover:
 
 In engineering, structures are designed to stay safe under uncertain conditions. There are many factors in the calculation of risk estimating which are material strength, loads, dimensions, and environmental effects may all vary. Because of this uncertainty, engineers need to estimate the chance of failure.
 
-> Monte Carlo Simulation is useful because it can model uncertainty by repeating many random trials and observing how often failure happens.
-
 ---
 
 ## Key Terms
