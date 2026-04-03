@@ -2,7 +2,7 @@
 
 ## Purpose of These Notes
 
-The main objective of these notes is to give a **clear and organized summary** of how *Monte Carlo Simulation (MCS)* is used in structural reliability analysis. These notes are written as **technical study notes** for engineering students who want to understand the basic idea, workflow, and practical use of MCS in a simple way.
+The main objective of these notes is **summarizing** of how *Monte Carlo Simulation (MCS)* is used in structural reliability analysis. These notes are written as **technical study notes** for engineering students who want to understand the basic idea, and practical use of MCS.
 
 The notes cover:
 
@@ -16,7 +16,7 @@ The notes cover:
 
 ## Why This Topic Matters
 
-In engineering, structures are designed to stay safe under uncertain conditions. Material strength, loads, dimensions, and environmental effects may all vary. Because of this uncertainty, engineers often need a way to estimate the chance of failure.
+In engineering, structures are designed to stay safe under uncertain conditions. There are many factors in the calculation of risk estimating which are material strength, loads, dimensions, and environmental effects may all vary. Because of this uncertainty, engineers need to estimate the chance of failure.
 
 > Monte Carlo Simulation is useful because it can model uncertainty by repeating many random trials and observing how often failure happens.
 
@@ -77,9 +77,9 @@ Where:
 
 ---
 
-## Simple Example
+## Example
 
-Assume:
+Assume that:
 
 - `R` follows a normal distribution with mean `100` and standard deviation `10`
 - `S` follows a normal distribution with mean `80` and standard deviation `15`
@@ -91,16 +91,16 @@ For each simulation:
 3. compute `g = R - S`
 4. record failure when `g < 0`
 
-After many repetitions, the ratio of failures gives an estimate of the probability of failure.
+The ratio of failures gives an estimate of the probability of failure.
 
 ---
 
-## Important Notes for Interpretation
+## Notes 
 
 - A **larger number of simulations** usually gives a more stable estimate.
 - A **smaller failure probability** means the system is more reliable.
 - Monte Carlo Simulation is easy to understand, but it may take more computation time when failure is very rare.
-- In practice, MCS is often compared with other methods such as *FOSM* or *FORM*.
+- MCS's result can be used for comparing with other methods such as *FOSM* or *FORM*.
 
 ---
 
@@ -123,7 +123,7 @@ Pf = failures / N
 print("Estimated failure probability =", Pf)
 ```
 
-This code shows a basic way to estimate failure probability using random sampling.
+This code shows the method of estimating failure probability using random sampling.
 
 ---
 
@@ -135,39 +135,20 @@ This code shows a basic way to estimate failure probability using random samplin
 - flexible for complex problems
 - useful when analytical solutions are difficult
 
-### Limitations
+### Disadvantages
 
 - may require a large number of simulations
-- can be slow for rare-event problems
-- result accuracy depends on model assumptions
-
----
-
-## Study Tips
-
-- Start with a **simple linear model** like `g(X) = R - S`.
-- Check whether your answer changes when the number of simulations increases.
-- Compare the simulation result with a theoretical or approximate method.
-- Keep your notes short, logical, and easy to review before exams.
+- can be slow when failure happens very rarely
+- result accuracy depends on model 
 
 ---
 
 ## Useful Resources
 
 - [Markdown Guide](https://www.markdownguide.org/)
-- [NumPy Documentation](https://numpy.org/doc/)
-- [Python Official Documentation](https://docs.python.org/3/)
-
----
-
-## Example Figure
-
-![Example convergence plot](https://via.placeholder.com/800x260.png?text=Monte+Carlo+Simulation+Convergence+Plot)
-
-*Figure 1. A simple placeholder image showing how a figure can be inserted into Markdown notes.*
 
 ---
 
 ## Summary
 
-These notes show that **Monte Carlo Simulation** is a practical method for estimating structural failure probability under uncertainty. By defining random variables, generating many samples, and checking the limit-state function, engineers can evaluate whether a system is likely to remain safe. This makes MCS a useful tool in *scientific and technical note-taking*, especially for reliability-related engineering topics.
+These notes show that **Monte Carlo Simulation** is a method for estimating structural failure probability under uncertainty. By doing this step by step, defining random variables, generating many samples, and checking the limit-state function, engineers can evaluate failure probability using MCs whether a system is safe or not. This makes MCS a useful tool in *scientific and technical note-taking* for reliability and risk assessment in engineering topics.
